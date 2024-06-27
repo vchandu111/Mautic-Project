@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Platform</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: #333;
+        color: white;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+      .hero {
+        background-image: url("https://media.istockphoto.com/id/1838941669/photo/businessman-holding-creative-light-bulb-with-growth-graph-and-educational-technology-icons.jpg?s=1024x1024&w=is&k=20&c=1RACa0_1VOP3ZNpWWFUQPPl1xVxaf8vLcLZPj2MGizM=");
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        opacity: 200;
+      }
+      .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.5; /* Adjust opacity here */
+      }
+      .hero h1 {
+        font-size: 3em;
+      }
+      .section {
+        padding: 60px 20px;
+        text-align: center;
+      }
+      .courses,
+      .team,
+      .about {
+        background-color: #f4f4f4;
+        margin-bottom: 20px;
+      }
+      .footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .course,
+      .team-member {
+        display: inline-block;
+        width: 30%;
+        margin: 1%;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .course img,
+      .team-member img {
+        max-width: 100%;
+        height: auto;
+      }
+      .course h3,
+      .team-member h3 {
+        margin: 15px 0 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="#">EduPlatform</a>
+      </div>
+      <div class="menu">
+        <a href="#courses">Courses</a>
+        <a href="#team">Team</a>
+        <a href="#about">About Us</a>
+        <a href="#footer">Contact</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div>
+        <h1>Welcome to EduPlatform</h1>
+        <p>Your journey to learning starts here</p>
+      </div>
+    </div>
+
+    <div id="courses" class="section courses">
+      <h2>Our Courses</h2>
+      <div class="course">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsj8Rr9_4noQt6tL2rRzNJOrDulvbQq9SIAw&s"
+          alt="Course 1"
+        />
+        <h3>Course 1</h3>
+        <p>Learn the basics of web development.</p>
+      </div>
+      <div class="course">
+        <img
+          src="https://www.datocms-assets.com/48401/1628644950-javascript.png?auto=format&fit=max&w=1200"
+          alt="Course 2"
+        />
+        <h3>Course 2</h3>
+        <p>Advanced JavaScript and frameworks.</p>
+      </div>
+      <div class="course">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/000/146/161/original/free-data-science-vector-illustrations.jpg"
+          alt="Course 3"
+        />
+        <h3>Course 3</h3>
+        <p>Mastering Python for data science.</p>
+      </div>
+    </div>
+
+    <div id="team" class="section team">
+      <h2>Our Team</h2>
+      <div class="team-member">
+        <img
+          src="https://www.creativefabrica.com/wp-content/uploads/2022/12/05/Man-vector-art-Graphics-50461110-1-580x386.jpg"
+          alt="Team Member 1"
+        />
+        <h3>John Doe</h3>
+        <p>Lead Instructor</p>
+      </div>
+      <div class="team-member">
+        <img
+          src="https://www.creativefabrica.com/wp-content/uploads/2022/12/05/Man-vector-art-Graphics-50461110-1-580x386.jpg"
+          alt="Team Member 2"
+        />
+        <h3>Jane Smith</h3>
+        <p>Senior Developer</p>
+      </div>
+      <div class="team-member">
+        <img
+          src="https://www.creativefabrica.com/wp-content/uploads/2022/12/05/Man-vector-art-Graphics-50461110-1-580x386.jpg"
+          alt="Team Member 3"
+        />
+        <h3>Emily Johnson</h3>
+        <p>Data Scientist</p>
+      </div>
+    </div>
+
+    <div id="about" class="section about">
+      <h2>About Us</h2>
+      <p>
+        EduPlatform is dedicated to providing the highest quality education in
+        various fields of technology. Our team of experienced instructors and
+        developers is here to guide you through your learning journey.
+      </p>
+    </div>
+
+    <div id="footer" class="footer">
+      <p>&copy; 2024 EduPlatform. All rights reserved.</p>
+    </div>
+  </body>
+</html>
